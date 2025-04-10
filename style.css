@@ -1,0 +1,156 @@
+/* 1. 전체 공통 설정 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #333;
+  line-height: 1.6;
+  font-size: 2vw
+}
+
+/* 2. 헤더 */
+header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 여기가 핵심: h1을 이미지 안쪽에 아래쪽에 위치시킴 */
+header h1 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00000099; /* 반투명 검정 배경 */
+  color: white;
+  padding: 0.3rem 1rem;
+  font-size: 3vw;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 10px #0000004D;
+  margin: 0;
+}
+
+
+/* 3. 내비게이션 */
+nav {
+  background-color: #333;
+  border-bottom: 1px solid white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* 4. 섹션 공통 스타일 */
+section {
+  max-width: 50vw; /*section 박스 최대 너비: 화면너비의 50%*/
+  margin: 3vw auto; /*상하좌우 여백*/
+  background-color: #fff; /*배경색*/
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* 5. 소개 부분 */
+.intro-flex {
+  display: flex; /*안에 요소를 가로로 나열*/
+  align-items: center; /*세로 방향으로 가운데 정렬*/
+  gap: 8vw; /*이미지와 글 사이 간격 */
+  max-width: 50vw; /*전체 가로폭*/
+  margin: 2rem; /*위아래 여백, 가운데 정렬*/
+  margin-top: auto; /* 제목과의 간격*/
+}
+
+.profile-img {
+  width: 12.5vw;
+  height: 12.5vw;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info strong {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.contact-info a {
+  color: #a70b0b;
+  text-decoration: underline;
+}
+
+/*학교 링크*/
+.school-link {
+  color: inherit; /*옆에 다른 글자랑 같은 색*/
+  text-decoration: none; /* 밑줄 없애기*/
+}
+
+.school-link:hover {
+  color: #B70050; /*마우스를 대면 "덕성버건디"색으로 변하게*/
+}
+
+
+/* 6. 프로젝트 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+table tr:hover {
+  background-color: #eef6ff;
+  transition: 0.3s;
+}
+
+/* 7. 푸터 */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
