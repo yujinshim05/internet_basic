@@ -141,7 +141,6 @@ section {
   margin-right: auto;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  
 }
 
 .project-table img {
@@ -155,12 +154,13 @@ section {
   vertical-align: middle;
   padding: 1rem;
   border: 0.15vw solid #333;
+  word-break: break-word;
 }
 
 .project-table a {
   color: #a70b0b;
   text-decoration: underline;
-  font-size: 1.55vw;
+  font-size: (0.8rem, 1.5vw, 1.2rem);
 }
 
 /* 7. 푸터 (하단 고정) */
