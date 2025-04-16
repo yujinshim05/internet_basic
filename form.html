@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>문의하기 | 심유진 포트폴리오</title>
+  <link rel="stylesheet" href="formstyle.css" />
+</head>
+<body>
+
+  <section>
+    <h2>문의하기</h2>
+    <p>포트폴리오에 대한 의견이나 궁금한 점이 있다면 아래 양식에 작성해주세요.</p>
+
+    <!--폼 전송-->
+    <form action="https://script.google.com/macros/s/AKfycbykMaXLmWlHGKJfOUFFyOg_dELQ9BQv0DUuXwHipI_jRCsXVtbByxj8w9nCbEjumm_J/exec" method="post">
+
+      <!-- 필드셋 1: 기본 정보 -->
+      <fieldset>
+        <legend>기본 정보</legend>
+
+        <!--이름, 전화번호, 메일 입력-->
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">전화번호:</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required><br><br>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      </fieldset>
+
+      <!-- 필드셋 2: 문의 내용 관련-->
+      <fieldset>
+        <legend>문의 내용</legend>
+
+        <!--셀렉트 박스: 문의 유형 선택-->
+        <label for="topic">문의 유형</label>
+        <select id="topic" name="topic" required>
+          <option value="">-- 선택하세요 --</option>
+          <option value="feedback">포트폴리오 피드백</option>
+          <option value="project">프로젝트 문의</option>
+          <option value="etc">기타</option>
+        </select>
+
+        <br><br>  
+        <!--라디오 버튼: 답변 방법 선택-->
+        <label>답변 방법</label>
+        <div class="radio-checkbox-group">
+          <input type="radio" id="by-email" name="reply" value="email" checked>
+          <label for="by-email">이메일</label>
+          <input type="radio" id="by-phone" name="reply" value="phone">
+          <label for="by-phone">전화</label>
+        </div>
+
+        <br>
+        <!--datalist: 연락 가능한 요일 선택-->
+        <label for="weekday">연락 가능 요일</label>
+        <div class="radio-checkbox-group">
+          <input list="weekdays" id="weekday" name="weekday" placeholder="요일 선택">
+          <datalist id="weekdays">
+            <option value="월요일">
+            <option value="화요일">
+            <option value="수요일">
+            <option value="목요일">
+            <option value="금요일">
+            <option value="토요일">
+            <option value="일요일">
+          </datalist>
+        </div>
+
+        <br><br>
+        <!--체크박스: 희망 답변 시간대 선택(복수선택 가능)-->
+        <label>희망 답변 시간대</label>
+        <div class="radio-checkbox-group">
+          <input type="checkbox" name="time[]" value="오전"> <label>오전</label>
+          <input type="checkbox" name="time[]" value="오후"> <label>오후</label>
+          <input type="checkbox" name="time[]" value="밤(20시~)"> <label>밤(20시~)</label>
+        </div>
+
+        <br>
+        <!--텍스트 영역: 문의 내용 작성-->
+        <label for="message">문의 내용</label>
+        <textarea id="message" name="message" rows="5" placeholder="내용을 입력해주세요" required></textarea>
+
+        <br><br>
+        <!--체크박스: 개인정보 수집 동의 여부 선택-->
+        <div class="radio-checkbox-group">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">개인정보 수집에 동의합니다.</label>
+        </div>
+        
+      </fieldset>
+      <!--제출버튼-->
+      <button type="submit">제출</button>
+    </form>
+  </section>
+
+</body>
+</html>

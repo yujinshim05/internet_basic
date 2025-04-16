@@ -1,0 +1,125 @@
+/* 전체 배경과 기본 폰트 */
+body {
+  background-color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  font-size: 2vw;
+  color: #000;
+  margin: 0;
+}
+
+/* 폼 섹션 박스 */
+section {
+  max-width: 50vw;
+  margin: 3vw auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+h2 {
+  font-size: 1.8rem;
+  color: #a70b0b;
+  margin-bottom: 1rem;
+}
+
+/* 폼 전체 정렬 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 필드셋 */
+fieldset {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #fefefe;
+}
+
+/* 필드셋 제목 */
+legend {
+  font-weight: bold;
+  color: #a70b0b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+}
+
+/* 라벨 */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* 입력 요소들 */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* 텍스트 영역만 수직 리사이즈 */
+textarea {
+  resize: vertical;
+}
+
+/* 라디오 & 체크박스 줄 정렬 */
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap:wrap;
+  margin-bottom: 1.5rem;
+
+}
+.radio-checkbox-group input[type="radio"],
+.radio-checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.radio-checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+  white-space: nowrap;
+}
+/* 제출 버튼 */
+button {
+  align-self: flex-start;
+  background-color: #a70b0b;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #870000;
+}
+
+label {
+  white-space: nowrap;
+}

@@ -7,64 +7,63 @@
   <meta name="description" content="디지털소프트웨어공학부 20240946 심유진의 포트폴리오입니다." />
   <title>Portfolio of 심유진</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- 헤더 -->
+  <!-- 헤더 : 배경이미지와 페이지 제목 표시-->
   <header>
-    <img src="images/pic1.jpg" alt="헤더 이미지" class="header-img"/>
+    <img src="images/header.jpg" alt="헤더 이미지" class="header-img"/>
       <h1>심유진의 포트폴리오</h1>
+        
   </header>
 
-  <!-- 네비게이션 -->
+<!-- 네비게이션 : 각 세션으로 이동할 수 있는 메뉴-->
   <nav>
     <ul>
       <li><a href="#intro">소개</a></li>
       <li><a href="#experience">경력</a></li>
       <li><a href="#education">학력</a></li>
-      <li><a href="#research">연구</a></li>
+      <li><a href="#interests">관심분야</a></li>
       <li><a href="#projects">프로젝트</a></li>
     </ul>
   </nav>
 
-  <!-- 소개 -->
-  <section id="intro" class="intro-section">
-    <article class="intro-flex">
-      <figure>
-        <img src="images/profile.jpg" alt="프로필 이미지" class="profile-img">
-      </figure>
-      <div class="contact-info">
-        <h2>Contact & Channels</h2>
-        <p><strong> e-mail:</strong> <a href="mailto:yujinshim05@gmail.com">yujinshim05@gmail.com</a></p>
-        <p><strong> Github:</strong> <a href="https://github.com/yujinshim05" target="_blank">https://github.com/yujinshim05</a></p>
+<!-- 소개 : 프로필 이미지와 연락처 정보-->
+<section id="intro" class="intro-section">
+  <div class="intro-flex">
+    <img src="images/profile.jpg" alt="프로필 이미지" class="profile-img">
+    <div class="contact-info">
+      <h2>Contact & Channels</h2>
+      <p><strong>📧 e-mail:</strong><br> <a href="mailto:yujinshim05@gmail.com">yujinshim05@gmail.com</a></p>
+      <p><strong>📌 Github:</strong><br> <a href="https://github.com/yujinshim05" target="_blank">https://github.com/yujinshim05</a></p>
+      <p><strong>🔗LinkedIn:</strong><br> <a href="https://www.linkedin.com/in/yujinshim548/" target="_blank">심유진</a></p>
     </div>
-    </article>
-  </section>
-  
+  </div>
+</section>
+
   
 
   <!-- 경력 -->
   <section id="experience">
     <h2>📁 Experience</h2>
     <ul>
-      <li>아직 없습니다~!</li>
+      <li>-</li>
     </ul>
   </section>
 
   <!-- 학력 -->
   <section id="education">
     <h2>🎓 Education</h2>
-    <p>
-        <a href="http://www.duksung.ac.kr/" target="blank" class="school-link">덕성여자대학교</a> 디지털소프트웨어공학부 재학 (2024.03~ )
+    <p><!--학교 이름 클릭 시 홈페이지로 이동-->
+        <a href="http://www.duksung.ac.kr/" target="_blank" class="school-link">덕성여자대학교</a> 디지털소프트웨어공학부 재학 (2024.03~ ) 
     </p>
   </section>
 
-  <!-- 연구 -->
-  <section id="research">
-    <h2>📚 Research</h2>
-    <p>연구연구연구연구?</p>
+  <!-- 관심분야 -->
+  <section id="interests">
+    <h2>📚 Interests</h2>
+    <p>자동차 소프트웨어 개발과 차량 사이버보안 기술에 관심이 있습니다. 자동차는 단순한 이동수단을 넘어, 사람들에게 쉼과 낭만을 주는 공간이라고 생각합니다. <br>저는 이러한 기술이 삶을 편리하게 만들면서도, 사생활과 감성적 가치를 지킬 수 있는 방향으로 발전하길 바랍니다. 변화하는 시대 속에서도 자동차가 사람들에게 의미 있는 존재로 남도록 기여하고 싶습니다.</p>
   </section>
 
   <!-- 프로젝트 -->
@@ -73,17 +72,16 @@
     <ol>
       <li>
         <h3>덕성여자대학교 맛집 소개 </h3>
-        <p>학교 근처 맛집 소개 사이트</p>
-        <table>
+        <p>: 학교 근처 맛집 소개 사이트 제작</p>
+        <table class = "project-table">
           <tr>
-            <td>
-              <a href="$project1.html$">
-                <img src="media/project.jpg" alt="프로젝트 이미지" width="150" />
+            <td> <!--이미지 클릭 시 상세페이지로 이동-->
+              <a href="https://yujinshim05.github.io/dswu_yumm/" target="_blank">
+                <img src="images/project1.jpg" alt="프로젝트 이미지"/>
               </a>
             </td>
-            <td>
-              <a href="https://github.com/$yourgithubusername$/duksung_diner" target="_blank">GitHub 저장소</a><br>
-              <a href="https://$yourgithubusername$.github.io/duksung_diner/" target="_blank">웹사이트 바로가기</a>
+            <td> <!--깃허브 저장소 주소-->
+              <a href="https://github.com/yujinshim05/dswu_yumm" target="_blank">http://github.com/yujinshim05/dswu_yumm</a>
             </td>
           </tr>
         </table>
@@ -91,9 +89,9 @@
     </ol>
   </section>
 
-  <!-- 푸터 -->
+  <!-- 푸터 :정보 및 문의하기 페이지 연결-->
   <footer>
-    <p> 20240946 심유진 | <a href="form.html">문의하기</a>
+    <p> 20240946 심유진 | <a href="form.html" target="_blank">문의하기</a>
       | 인터넷기초 과제</p>
   </footer>
 
