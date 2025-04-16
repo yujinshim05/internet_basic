@@ -142,9 +142,8 @@ section {
 }
 
 .project-table img {
-  width: 100%;
-  max-width: 250px;
-  min-width: 130px;
+  width: 12.5vw;
+  height: 12.5vw;
   height: auto;
   display: block;
 }
