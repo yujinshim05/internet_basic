@@ -160,7 +160,7 @@ section {
 .project-table a {
   color: #a70b0b;
   text-decoration: underline;
-  font-size: (0.8rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 /* 7. 푸터 (하단 고정) */
